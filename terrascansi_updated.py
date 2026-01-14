@@ -1,8 +1,5 @@
 import streamlit as st
 from pathlib import Path
-import folium
-from streamlit_folium import st_folium
-import pandas as pd
 import ee
 import folium
 from streamlit_folium import st_folium
@@ -10,7 +7,6 @@ import geemap.foliumap as geemap
 import pandas as pd
 import numpy as np
 from sklearn.preprocessing import MinMaxScaler
-import json
 st.set_page_config(page_title="Terrascansi", layout="wide")
 st.markdown("""
     <style>
