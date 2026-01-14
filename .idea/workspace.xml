@@ -5,12 +5,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="17fe7177-9de8-4291-b3dd-cb511e042758" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/terrariscan.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/terrariscan.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Terrascansi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/paths.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uti.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/delhi_ndvi_2025.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example.py" beforeDir="false" afterPath="$PROJECT_DIR$/example.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/green spaces.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/green spaces.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/greenspace.py" beforeDir="false" afterPath="$PROJECT_DIR$/greenspace.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/0_Urban_heat_Island.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/uhi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/1_LST_Map.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/lstmap.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/2_Dataupload.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/dup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/3_Vegetation.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/vege.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/4_Recommendations.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/urban_heat_subpages/Overview.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/urban_heat_subpages/Overview.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/urban_heat_subpages/Population_Exposure.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/urban_heat_subpages/Priority_Zones.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/urban_heat_subpages/Vegetation_Correlation.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/urban_heat_subpages/Vegetation_Correlation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/terrascansi_updated.py" beforeDir="false" afterPath="$PROJECT_DIR$/terrascansi_updated.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -20,21 +46,21 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "arungunayo"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;arungunayo&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/arungunayo/Terrariscan.git",
-    "accountId": "d9f51c1a-f622-4fb8-9146-dff5f578d2c7"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/arungunayo/Terrariscan.git&quot;,
+    &quot;accountId&quot;: &quot;d9f51c1a-f622-4fb8-9146-dff5f578d2c7&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="38EgLe6mZFiZqo8pegxrA8Vig5P" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -43,6 +69,12 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.example.executor": "Run",
+    "Python.lstmap.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.uhi.executor": "Run",
+    "Python.uti.executor": "Run",
+    "Python.vege.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -55,6 +87,36 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="terrariscan" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -70,11 +132,64 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1768370092780</updated>
-      <workItem from="1768370092785" duration="358000" />
+      <workItem from="1768370092785" duration="15231000" />
     </task>
+    <task id="LOCAL-00001">
+      <option name="closed" value="true" />
+      <created>1768370557434</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1768370557434</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="jupyter-line">
+          <url>file://$PROJECT_DIR$/green spaces.ipynb</url>
+          <line>120</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="jupyter-line">
+          <url>file://$PROJECT_DIR$/green spaces.ipynb</url>
+          <line>171</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="jupyter-line">
+          <url>file://$PROJECT_DIR$/green spaces.ipynb</url>
+          <line>172</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="jupyter-line">
+          <url>file://$PROJECT_DIR$/green spaces.ipynb</url>
+          <line>173</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="jupyter-line">
+          <url>file://$PROJECT_DIR$/green spaces.ipynb</url>
+          <line>174</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="jupyter-line">
+          <url>file://$PROJECT_DIR$/green spaces.ipynb</url>
+          <line>176</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/terrariscan$uti.coverage" NAME="uti Coverage Results" MODIFIED="1768379968866" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/terrariscan$main.coverage" NAME="main Coverage Results" MODIFIED="1768389963073" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/terrariscan$example.coverage" NAME="example Coverage Results" MODIFIED="1768381344783" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/terrariscan$vege.coverage" NAME="vege Coverage Results" MODIFIED="1768387326973" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pages" />
+    <SUITE FILE_PATH="coverage/terrariscan$lstmap.coverage" NAME="lstmap Coverage Results" MODIFIED="1768387023445" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pages" />
+    <SUITE FILE_PATH="coverage/terrariscan$uhi.coverage" NAME="uhi Coverage Results" MODIFIED="1768380544928" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pages" />
   </component>
 </project>

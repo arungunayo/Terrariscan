@@ -1,5 +1,3 @@
-!pip install geemap earthengine-api folium pandas scikit-learn -q
-
 import ee
 import geemap
 import pandas as pd
@@ -9,7 +7,7 @@ import json
 import folium
 
 ee.Authenticate()
-ee.Initialize(project="green-space-483413")
+ee.Initialize(project="terrariscan")
 
 city = ee.FeatureCollection("FAO/GAUL/2015/level2") \
            .filter(ee.Filter.eq('ADM2_NAME', 'Ghaziabad'))

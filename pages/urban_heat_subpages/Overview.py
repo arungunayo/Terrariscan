@@ -1,4 +1,13 @@
-
 import streamlit as st
-st.subheader("Urban Heat Island Overview")
-st.write("Urban heat islands are areas, such as cities, that experience significantly higher temperatures than their surrounding rural areas. This phenomenon occurs due to several factors:Surface Absorption: Dark surfaces like asphalt and concrete absorb more sunlight and heat, leading to warmer temperatures. Reduced Ventilation: Tall buildings and narrow streets can block wind flow, preventing natural cooling. Human Activities: Energy consumption and industrial processes contribute to heat emissions, further increasing temperatures. Urban Geometry: The layout of cities can create urban canyons that trap heat. Overall, urban heat islands pose significant challenges to urban environments, affecting air quality and human health.")
+
+def show_overview():
+    st.subheader("Terrascansi Overview")
+    st.write(
+        """
+        Vision
+            Build a system that uses satellite imagery + AI to:
+               1.  Detect existing green spaces
+               2. Track how they change over time
+               3. Actively suggest where new green spaces should be created to maximize environmental impact
+        """
+)

@@ -2,7 +2,7 @@
 # remove after use im the end after final product
 from  utils.ndvi import get_ndvi
 from utils.tiff import disp_tiff
-output_dir = "C:/Users/aroha/terrariscan/data"
+output_dir = "/data"
 get_ndvi(
     output_dir,
     start_date="2025-01-01",
