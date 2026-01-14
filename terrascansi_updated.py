@@ -332,23 +332,23 @@ elif st.session_state.page == "Data Upload":
     st.subheader(" NDVI Trend Example")
     st.line_chart(df.set_index("Date"))
     st.header("Sample Map Preview")
-    m = folium.Map(location=[28.6139, 77.2090], zoom_start=10)  # Example: Delhi coords
-    folium.CircleMarker(
-        location=[28.61, 77.23],
-        radius=15,
-        color="green",
-        fill=True,
-        fill_opacity=0.6,
-        popup="High NDVI (Healthy Vegetation)"
-    ).add_to(m)
-    folium.CircleMarker(
-        location=[28.65, 77.18],
-        radius=15,
-        color="red",
-        fill=True,
-        fill_opacity=0.6,
-        popup="Low NDVI (Vegetation Loss)"
-    ).add_to(m)
+    m = folium.Map(location=[28.6692, 77.4538], zoom_start=10)  # Example: Delhi coords
+    #folium.CircleMarker(
+    #     location=[28.61, 77.23],
+    #     radius=15,
+    #     color="green",
+    #     fill=True,
+    #     fill_opacity=0.6,
+    #     popup="High NDVI (Healthy Vegetation)"
+    # ).add_to(m)
+    # folium.CircleMarker(
+    #     location=[28.65, 77.18],
+    #     radius=15,
+    #     color="red",
+    #     fill=True,
+    #     fill_opacity=0.6,
+    #     popup="Low NDVI (Vegetation Loss)"
+    # ).add_to(m)
     st_folium(m, width=700, height=500)
     # st.header("⚡ Why Terrascansi is Different at This Stage")
     # comparison = pd.DataFrame({
@@ -483,5 +483,6 @@ st.markdown("""
     }
     </style>
 """, unsafe_allow_html=True)
+
 
 
