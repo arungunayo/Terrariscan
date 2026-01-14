@@ -97,3 +97,13 @@
 iframe{
     height: 0rem;
 }
+
+/* Hide Streamlit's default sidebar and page navigation so only the
+   custom top navbar is used for navigation. */
+[data-testid="stSidebar"] {
+    display: none !important;
+}
+
+[data-testid="stSidebarNav"] {
+    display: none !important;
+}
