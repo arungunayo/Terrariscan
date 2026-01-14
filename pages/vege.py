@@ -16,25 +16,20 @@ def load_view():
     
     This produces a **Priority Index** that ranks zones by urgency for greening interventions.
     """)
-
-    # ---------- Streamlit setup ----------
     st.set_page_config(layout="wide")
     st.title("NDVI Map – Ghaziabad (Sentinel-2)")
 
-    # ---------- Earth Engine init (SAFE) ----------
     try:
         ee.Initialize(project='terrariscan')
     except Exception:
         ee.Authenticate()
         ee.Initialize(project='terrariscan')
 
-    # ---------- City boundary ----------
     city = (
         ee.FeatureCollection("FAO/GAUL/2015/level2")
         .filter(ee.Filter.eq('ADM2_NAME', 'Ghaziabad'))
     )
 
-    # ---------- Sentinel-2 ----------
     sentinel = (
         ee.ImageCollection("COPERNICUS/S2_SR_HARMONIZED")
         .filterBounds(city)
@@ -43,21 +38,18 @@ def load_view():
         .median()
     )
 
-    # ---------- NDVI ----------
     ndvi = sentinel.normalizedDifference(['B8', 'B4']).rename('NDVI')
 
-    # ---------- Visualization ----------
     ndvi_vis = {
         'min': 0,
         'max': 1,
         'palette': ['white', 'green']
     }
 
-    # ---------- Map ----------
     m = geemap.Map(center=[28.67, 77.45], zoom=10)
     m.addLayer(ndvi, ndvi_vis, 'NDVI')
     m.addLayer(city, {'color': 'black'}, 'City Boundary')
     m.add_colorbar(ndvi_vis, label="NDVI")
 
-    # ---------- Display ----------
+
     st_folium(m, width=1200, height=700)

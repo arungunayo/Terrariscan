@@ -30,20 +30,18 @@ def load_view():
     st.set_page_config(layout="wide")
     st.title("Land Surface Temperature (LST) – Ghaziabad")
 
-    # ---------- Earth Engine Init (NO CACHE) ----------
+
     try:
         ee.Initialize(project='terrariscan')
     except Exception:
         ee.Authenticate()
         ee.Initialize(project='terrariscan')
 
-    # ---------- City boundary ----------
     city = (
         ee.FeatureCollection("FAO/GAUL/2015/level2")
         .filter(ee.Filter.eq('ADM2_NAME', 'Ghaziabad'))
     )
 
-    # ---------- Landsat ----------
     landsat_image = (
         ee.ImageCollection("LANDSAT/LC08/C02/T1_L2")
         .filterBounds(city)
@@ -52,7 +50,6 @@ def load_view():
         .median()
     )
 
-    # ---------- LST ----------
     lst = (
         landsat_image.select('ST_B10')
         .multiply(0.00341802)
@@ -62,7 +59,6 @@ def load_view():
         .rename('LST')
     )
 
-    # ---------- Map ----------
     lst_vis = {
         "min": 25,
         "max": 45,

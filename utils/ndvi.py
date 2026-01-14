@@ -32,19 +32,16 @@ def get_ndvi(
         Path to downloaded NDVI file
     """
 
-    # ------------------ AUTH ------------------
     try:
         ee.Initialize(project=project_id)
     except Exception:
         ee.Authenticate()
         ee.Initialize(project=project_id)
 
-    # ------------------ DELHI ROI ------------------
     states = ee.FeatureCollection("FAO/GAUL/2015/level1")
     delhi = states.filter(ee.Filter.eq("ADM1_NAME", "Delhi"))
     roi = delhi.geometry().simplify(100)
 
-    # ------------------ CLOUD MASK ------------------
     def mask_s2_clouds(image):
         qa = image.select("QA60")
         cloud = 1 << 10
@@ -53,7 +50,6 @@ def get_ndvi(
                qa.bitwiseAnd(cirrus).eq(0))
         return image.updateMask(mask).divide(10000)
 
-    # ------------------ LOAD SENTINEL-2 ------------------
     s2 = (
         ee.ImageCollection("COPERNICUS/S2_SR_HARMONIZED")
         .filterBounds(roi)
@@ -62,7 +58,6 @@ def get_ndvi(
         .map(mask_s2_clouds)
     )
 
-    # ------------------ NDVI ------------------
     ndvi = (
         s2.median()
         .normalizedDifference(["B8", "B4"])
@@ -70,7 +65,6 @@ def get_ndvi(
         .clip(roi)
     )
 
-    # ------------------ EXPORT ------------------
     os.makedirs(output_dir, exist_ok=True)
     output_path = os.path.join(
         output_dir, f"delhi_ndvi_{start_date[:4]}.tif"

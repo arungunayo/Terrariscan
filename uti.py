@@ -51,6 +51,4 @@ def navbar_component():
     </div>
     """
 
-    # Use markdown so the navbar lives in the main document, not an iframe.
-    # This ensures clicks actually change the app URL and routing works.
     st.markdown(navbar_html, unsafe_allow_html=True)
